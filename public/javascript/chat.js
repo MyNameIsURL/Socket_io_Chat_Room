@@ -60,12 +60,12 @@ $(function () {
   // handle receiving new messages
   socket.on('new:message', function(msgObject){
     $('#messages').append($('<div class="msg new-chat-message">').html('<span class="member-name">' + msgObject.name + '</span>: ' + msgObject.msg));
-    window.scrollTo(0, document.body.scrollHeight);
+    $('.chat-window').scrollTop($('#messages').height());
   });
 
   // handle members joining
   socket.on('new:member', function(name){
     $('#messages').append($('<div class="msg new-member">').text(name + ' has joined the room'));
-    window.scrollTo(0, document.body.scrollHeight);
+    $('.chat-window').scrollTop($('#messages').height());
   });
 });
