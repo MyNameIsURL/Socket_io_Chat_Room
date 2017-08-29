@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CodeLife.io Chat</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>CodeLife.io Chat</h2>
+          <div class="input-group col-6 mx-auto enter-name">
+            <input type="text" id="name-input" class="form-control" placeholder="Enter Your Name">
+            <span class="input-group-addon submit-name">Enter</span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="chat-window">
+            <div id="messages"></div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="input-group enter-chat-message">
+            <input type="text" id="chat-input" class="form-control" placeholder="Chat Message...">
+            <span class="input-group-addon submit-chat-message">Submit</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <small>
+          Powered by <a href="http://codelife.io">CodeLife.io</a>
+        </small>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascript/chat.js"></script>
+  </body>
+</html>
