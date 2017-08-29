@@ -6,7 +6,7 @@ $(function () {
 
   // handle name entered with via keyboard enter
   nameInput.keydown(function(event) {
-    if ( event.which == 13 ) {
+    if (event.which == 13) {
       event.preventDefault();
 
       // ensure message not empty
@@ -35,7 +35,7 @@ $(function () {
 
   // handle keyboard enter button being pressed
   chatInput.keydown(function(event) {
-    if ( event.which == 13 ) {
+    if (event.which == 13) {
       event.preventDefault();
 
       // ensure message not empty
